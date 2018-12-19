@@ -33,13 +33,15 @@ make
 
 ```{bash}
 wget http://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
-wget http://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar'
+wget http://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
+tar -xvf VOCtrainval_11-May-2012.tar
+tar -xvf VOCtest_06-Nov-2007.tar
 ```
 
 ### 	Download the weights:
 
 ```{bash}
-wget  https://pjreddie.com/media/files/yolov3-tiny.weights
+wget https://pjreddie.com/media/files/yolov3-tiny.weights
 wget https://pjreddie.com/media/files/yolov2.weights
 wget https://pjreddie.com/media/files/darknet53.conv.74
 ```
