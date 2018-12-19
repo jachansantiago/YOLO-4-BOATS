@@ -24,7 +24,6 @@ The output of the programm are the image given with the predicted boundary. This
 ### Download darknet.
 ```{bash}
 git clone https://github.com/pjreddie/darknet
-git clone https://github.com/pjreddie/darknet
 cd darknet
 make
 ```
