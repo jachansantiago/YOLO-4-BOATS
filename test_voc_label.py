@@ -4,7 +4,7 @@ import os
 from os import listdir, getcwd
 from os.path import join
 
-sets=[('2012', 'train'), ('2012', 'val')]
+sets=[('2007', 'test')]
 
 classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tvmonitor"]
 
@@ -62,12 +62,12 @@ for year, image_set in sets:
         convert_annotation(year, image_id)
     #list_file.close()
 
-#os.system("cat 2012_train.txt 2012_val.txt > train.txt")
-#os.system("cat 2012_train.txt 2012_val.txt > train.all.txt")
+#os.system("cat 2012_test.txt > test.txt")
+#os.system("cat 2012_test.txt > test.all.txt")
 
 boat_string= "\n".join(boat_images)
 
-with open("train.txt", "w") as f:
+with open("test.txt", "w") as f:
     f.write(boat_string)
 
 
