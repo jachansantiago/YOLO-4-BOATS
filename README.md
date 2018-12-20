@@ -3,7 +3,7 @@
 Manuel Alvarez,
 Jeffrey Chan,
 Anthony Ortiz,		
-Jose Quinones,
+Jose Quiñones,
 
 ## Outline:
 The following code is a real-time object detection algorithm based on the programm You Only Look Once (YOLO), by Joseph Redmon, Ali Farhadi. More specifically, we used YOLOv2 and Tiny YOLOv3. The data used was extracted from Pascal VOC 2
