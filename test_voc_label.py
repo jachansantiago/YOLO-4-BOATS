@@ -48,7 +48,7 @@ def convert_annotation(year, image_id):
         bb = convert((w,h), b)
         out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
     if have_boat:
-        boat_images.append("{}/VOCdevkit/VOC2012/JPEGImages/{}.jpg".format(wd, image_id))
+        boat_images.append("{}/VOCdevkit/VOC2007/JPEGImages/{}.jpg".format(wd, image_id))
 
 wd = getcwd()
 

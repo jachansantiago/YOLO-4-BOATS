@@ -9,7 +9,7 @@ Jose Quinones,
 The following code is a real-time object detection algorithm based on the programm You Only Look Once (YOLO), by Joseph Redmon, Ali Farhadi. More specifically, we used YOLOv2 and Tiny YOLOv3. The data used was extracted from Pascal VOC 2
 
 ## What's YOLO?:
-YOLO is a programm of real-time object detection that, as its name suggest, runs the convolutional neural network (CNN) and classifiers only once per sample. This trait makes YOLO much faster than competitors. Is also important to mention that YOLO threats object detection as a regression problem. YOLOv2 have 19 convolutional layers and 5 maxpooling layers, while tiny-YOLOv3 only has 13 convolutional layers.
+YOLO is a program of real-time object detection that, as its name suggest, runs the convolutional neural network (CNN) and classifiers only once per sample. This trait makes YOLO much faster than competitors. Is also important to mention that YOLO threats object detection as a regression problem. YOLOv2 have 19 convolutional layers and 5 maxpooling layers, while tiny-YOLOv3 only has 13 convolutional layers.
 
 ## Structure of Data:
 The image used were extrated from PASCAL VOC data sets. We were able to get 508 images and their labels. Unfortunately, the labels were not already orginize as YOLO require. But fortunately, YOLO had a script for PASCAL VOC labels managing, as to organize them correctly. It, therefore, arrenge the labels text to have [Class, x, y, width, height], where x, y represent the coordinates of the center of the boundary box.
@@ -53,5 +53,5 @@ python test_voc_label.py
 ### To train yolo V2:
 
 ```{bash}
-./darknet/darknet detector train boats.data cfg/yolov2.cfg darknet53.conv.74
+./darknet/darknet detector train boats.data cfg/yolov2-boats.cfg darknet53.conv.74
 ```

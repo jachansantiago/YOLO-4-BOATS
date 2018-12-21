@@ -1,5 +1,4 @@
 classes=2
 train=train.txt
-valid=test.txt
 names=boats.names
-backup=backup
+backup=weights
