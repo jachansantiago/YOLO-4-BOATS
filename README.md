@@ -59,7 +59,7 @@ python test_voc_label.py
 
 #### Train Yolo Tiny V3
 ```{bash}
-./darknet/darknet detector train boats.data cfg/yolov3-tiny.cfg darknet53.conv.74
+./darknet/darknet detector train boats.data cfg/yolov3-tiny-boats.cfg darknet53.conv.74
 ```
 
 ### Predict using our pre-trained networks:
@@ -69,11 +69,11 @@ python test_voc_label.py
 Dowload weights [Here](https://drive.google.com/file/d/1pOVeu-YjcqSRafPvYQHAZoiQMdNV_9OZ/view?usp=sharing)
 
 ```{bash}
-./darknet/darknet detector test boats.data cfg/yolov2.cfg weights/yolov2.backup < test.txt
+./darknet/darknet detector test boats.data cfg/yolov2-boats.cfg weights/yolov2.backup < test.txt
 ```
 
 #### Yolo Tiny V3
 
 ```{bash}
-./darknet/darknet detector test boats.data cfg/yolov3-tiny.cfg weights/yolov3-tiny_30000.weights < test.txt
+./darknet/darknet detector test boats.data cfg/yolov3-tiny-boats.cfg weights/yolov3-tiny-boats_30000.weights < test.txt
 ```
