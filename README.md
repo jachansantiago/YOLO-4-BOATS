@@ -3,7 +3,7 @@
 Manuel Alvarez,
 Jeffrey Chan,
 Anthony Ortiz,		
-Jose Quinones,
+Jose Quiñones,
 
 ## Outline:
 The following code is a real-time object detection algorithm based on the programm You Only Look Once (YOLO), by Joseph Redmon, Ali Farhadi. More specifically, we used YOLOv2 and Tiny YOLOv3. The data used was extracted from Pascal VOC 2
@@ -50,8 +50,30 @@ python voc_label.py
 python test_voc_label.py
 ```
 
-### To train yolo V2:
+### To train YOLO
 
+#### Train YoloV2
 ```{bash}
 ./darknet/darknet detector train boats.data cfg/yolov2-boats.cfg darknet53.conv.74
+```
+
+#### Train Yolo Tiny V3
+```{bash}
+./darknet/darknet detector train boats.data cfg/yolov3-tiny.cfg darknet53.conv.74
+```
+
+### Predict using our pre-trained networks:
+
+#### YoloV2
+ 
+Dowload weights [Here](https://drive.google.com/file/d/1pOVeu-YjcqSRafPvYQHAZoiQMdNV_9OZ/view?usp=sharing)
+
+```{bash}
+./darknet/darknet detector test boats.data cfg/yolov2.cfg weights/yolov2.backup < test.txt
+```
+
+#### Yolo Tiny V3
+
+```{bash}
+./darknet/darknet detector test boats.data cfg/yolov3-tiny.cfg weights/yolov3-tiny_30000.weights < test.txt
 ```
